@@ -1,0 +1,208 @@
+[INFO ] 2018-02-07 07:12:02.426 [main] SpringBootApplication - Starting SpringBootApplication v0.10.0 on DESKTOP-545PC5B with PID 30100 (C:\stuff\ethereum\cakeshop.war started by Administrator in C:\stuff\ethereum)
+[INFO ] 2018-02-07 07:12:02.433 [main] SpringBootApplication - The following profiles are active: container,spring-boot,local
+[INFO ] 2018-02-07 07:12:05.952 [main] AppConfig - eth.config.dir=C:\stuff\ethereum\data\local
+[INFO ] 2018-02-07 07:12:05.956 [main] AppConfig - Initializing new config from C:\stuff\ethereum\cakeshop.war!\WEB-INF\classes!\config\application-local.properties
+[WARN ] 2018-02-07 07:12:05.957 [main] AppConfig - Authentication disabled.
+[INFO ] 2018-02-07 07:12:05.968 [main] AppConfig - Loading config from C:\stuff\ethereum\data\local\application.properties
+[ERROR] 2018-02-07 07:12:07.828 [main] QuorumConfigBean - Running on unsupported OS! Only Linux and Mac OS X are currently supported for Quorum, on Windoze, please run with -Dgeth.node=geth
+[ERROR] 2018-02-07 07:12:07.843 [main] QuorumConfigBean - Running on unsupported OS! Only Linux and Mac OS X are currently supported for Quorum, on Windoze, please run with -Dgeth.node=geth
+[INFO ] 2018-02-07 07:14:02.250 [main] SpringBootApplication - Starting SpringBootApplication v0.10.0 on DESKTOP-545PC5B with PID 27504 (C:\stuff\ethereum\cakeshop.war started by Administrator in C:\stuff\ethereum)
+[INFO ] 2018-02-07 07:14:02.268 [main] SpringBootApplication - The following profiles are active: container,spring-boot,local
+[INFO ] 2018-02-07 07:14:05.555 [main] AppConfig - eth.config.dir=C:\stuff\ethereum\data\local
+[WARN ] 2018-02-07 07:14:05.557 [main] AppConfig - Authentication disabled.
+[INFO ] 2018-02-07 07:14:05.572 [main] AppConfig - Loading config from C:\stuff\ethereum\data\local\application.properties
+[ERROR] 2018-02-07 07:14:07.124 [main] QuorumConfigBean - Running on unsupported OS! Only Linux and Mac OS X are currently supported for Quorum, on Windoze, please run with -Dgeth.node=geth
+[ERROR] 2018-02-07 07:14:07.146 [main] QuorumConfigBean - Running on unsupported OS! Only Linux and Mac OS X are currently supported for Quorum, on Windoze, please run with -Dgeth.node=geth
+[INFO ] 2018-02-07 07:15:03.550 [main] SpringBootApplication - Starting SpringBootApplication v0.10.0 on DESKTOP-545PC5B with PID 49136 (C:\stuff\ethereum\cakeshop.war started by Administrator in C:\stuff\ethereum)
+[INFO ] 2018-02-07 07:15:03.562 [main] SpringBootApplication - The following profiles are active: container,spring-boot,local
+[INFO ] 2018-02-07 07:15:06.846 [main] AppConfig - eth.config.dir=C:\stuff\ethereum\data\local
+[WARN ] 2018-02-07 07:15:06.847 [main] AppConfig - Authentication disabled.
+[INFO ] 2018-02-07 07:15:06.863 [main] AppConfig - Loading config from C:\stuff\ethereum\data\local\application.properties
+[INFO ] 2018-02-07 07:15:19.797 [main] AppStartup - Autostarting geth node
+[INFO ] 2018-02-07 07:15:20.218 [main] ProcessUtils - Creating pid file: C:\stuff\ethereum\data\local\geth.pid
+[INFO ] 2018-02-07 07:15:20.408 [main] GethHttpServiceImpl - Geth RPC endpoint is up
+[INFO ] 2018-02-07 07:15:20.468 [main] GethHttpServiceImpl - Waiting up to 8000ms for 8 accounts to unlock
+[INFO ] 2018-02-07 07:15:28.497 [main] GethHttpServiceImpl - Geth wallet accounts unlocked (8 accounts)
+[INFO ] 2018-02-07 07:15:28.533 [main] BlockchainInitializerTask - Contract registry address not found
+[INFO ] 2018-02-07 07:15:28.534 [main] BlockchainInitializerTask - ContractRegistry not found on chain
+[INFO ] 2018-02-07 07:15:28.545 [main] BlockchainInitializerTask - Deploying ContractRegistry to chain
+[INFO ] 2018-02-07 07:24:51.149 [main] BlockchainInitializerTask - Deploying sample contract (SimpleStorage) to chain
+[INFO ] 2018-02-07 07:24:55.627 [cake-1] ContractRegistrationTask - Registering newly mined contract at address 0x098da5468f564063e4c35af412bdc409d7a6d89c
+[INFO ] 2018-02-07 07:24:57.440 [main] BlockchainInitializerTask - Storing existing wallet account balances
+[INFO ] 2018-02-07 07:24:57.776 [main] GethHttpServiceImpl - Ethereum started successfully
+[INFO ] 2018-02-07 07:24:57.779 [cake-2] ContractRegistrationTask - Registering newly mined contract at address 0x881ba6a77748bf1d54b7cb653eabba9a1bc7a0a2
+[INFO ] 2018-02-07 07:24:58.208 [main] SpringBootApplication - Started SpringBootApplication in 595.258 seconds (JVM running for 601.064)
+[INFO ] 2018-02-07 07:34:13.648 [qtp2138005960-22] WebSocketPushServiceImpl - Starting  Tailier
+[INFO ] 2018-02-07 07:35:13.190 [clientOutboundChannel-4] WebSocketPushServiceImpl - Stopping  Tailer
+[INFO ] 2018-02-07 07:40:43.044 [main] SpringBootApplication - Starting SpringBootApplication v0.10.0 on DESKTOP-545PC5B with PID 16100 (C:\stuff\ethereum\cakeshop.war started by Administrator in C:\stuff\ethereum)
+[INFO ] 2018-02-07 07:40:43.056 [main] SpringBootApplication - The following profiles are active: container,spring-boot,local
+[INFO ] 2018-02-07 07:40:46.515 [main] AppConfig - eth.config.dir=C:\stuff\ethereum\data\local
+[WARN ] 2018-02-07 07:40:46.516 [main] AppConfig - Authentication disabled.
+[INFO ] 2018-02-07 07:40:46.533 [main] AppConfig - Loading config from C:\stuff\ethereum\data\local\application.properties
+[INFO ] 2018-02-07 07:40:59.172 [main] AppStartup - Autostarting geth node
+[INFO ] 2018-02-07 07:40:59.380 [main] ProcessUtils - Creating pid file: C:\stuff\ethereum\data\local\geth.pid
+[INFO ] 2018-02-07 07:40:59.608 [main] GethHttpServiceImpl - Geth RPC endpoint is up
+[INFO ] 2018-02-07 07:40:59.688 [main] GethHttpServiceImpl - Waiting up to 8000ms for 8 accounts to unlock
+[INFO ] 2018-02-07 07:41:07.717 [main] GethHttpServiceImpl - Geth wallet accounts unlocked (8 accounts)
+[INFO ] 2018-02-07 07:41:07.754 [main] BlockchainInitializerTask - Loaded contract registry address 0x098da5468f564063e4c35af412bdc409d7a6d89c
+[INFO ] 2018-02-07 07:41:07.763 [main] BlockchainInitializerTask - Storing existing wallet account balances
+[INFO ] 2018-02-07 07:41:08.015 [main] GethHttpServiceImpl - Ethereum started successfully
+[INFO ] 2018-02-07 07:41:08.920 [main] SpringBootApplication - Started SpringBootApplication in 26.471 seconds (JVM running for 32.028)
+[INFO ] 2018-02-07 08:51:13.185 [main] SpringBootApplication - Starting SpringBootApplication v0.10.0 on DESKTOP-545PC5B with PID 11584 (C:\stuff\ethereum\cakeshop.war started by Administrator in C:\stuff\ethereum)
+[INFO ] 2018-02-07 08:51:13.190 [main] SpringBootApplication - The following profiles are active: container,spring-boot,local
+[INFO ] 2018-02-07 08:51:16.607 [main] AppConfig - eth.config.dir=C:\stuff\ethereum\data\local
+[WARN ] 2018-02-07 08:51:16.608 [main] AppConfig - Authentication disabled.
+[INFO ] 2018-02-07 08:51:16.628 [main] AppConfig - Loading config from C:\stuff\ethereum\data\local\application.properties
+[INFO ] 2018-02-07 08:51:44.184 [main] AppStartup - Autostarting geth node
+[INFO ] 2018-02-07 08:51:44.455 [main] ProcessUtils - Creating pid file: C:\stuff\ethereum\data\local\geth.pid
+[INFO ] 2018-02-07 08:51:44.671 [main] GethHttpServiceImpl - Geth RPC endpoint is up
+[INFO ] 2018-02-07 08:51:44.749 [main] GethHttpServiceImpl - Waiting up to 8000ms for 8 accounts to unlock
+[INFO ] 2018-02-07 08:51:52.779 [main] GethHttpServiceImpl - Geth wallet accounts unlocked (8 accounts)
+[INFO ] 2018-02-07 08:51:52.811 [main] BlockchainInitializerTask - Loaded contract registry address 0x098da5468f564063e4c35af412bdc409d7a6d89c
+[INFO ] 2018-02-07 08:51:52.825 [main] BlockchainInitializerTask - Storing existing wallet account balances
+[INFO ] 2018-02-07 08:51:53.155 [main] GethHttpServiceImpl - Ethereum started successfully
+[INFO ] 2018-02-07 08:51:53.428 [main] SpringBootApplication - Started SpringBootApplication in 40.85 seconds (JVM running for 47.999)
+[WARN ] 2018-02-07 08:56:54.741 [qtp2138005960-20] BaseController - Caught exception: RPC request failed: could not decrypt key with given passphrase
+com.jpmorgan.cakeshop.error.APIException: RPC request failed: could not decrypt key with given passphrase
+	at com.jpmorgan.cakeshop.service.impl.GethHttpServiceImpl.processResponse(GethHttpServiceImpl.java:199) ~[classes!/:0.10.0]
+	at com.jpmorgan.cakeshop.service.impl.GethHttpServiceImpl.executeGethCall(GethHttpServiceImpl.java:165) ~[classes!/:0.10.0]
+	at com.jpmorgan.cakeshop.service.impl.GethHttpServiceImpl.executeGethCall(GethHttpServiceImpl.java:146) ~[classes!/:0.10.0]
+	at sun.reflect.GeneratedMethodAccessor106.invoke(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_144]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333) ~[spring-aop-4.3.5.RELEASE.jar!/:4.3.5.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207) ~[spring-aop-4.3.5.RELEASE.jar!/:4.3.5.RELEASE]
+	at com.sun.proxy.$Proxy116.executeGethCall(Unknown Source) ~[?:?]
+	at com.jpmorgan.cakeshop.service.impl.WalletServiceImpl.unlockAccount(WalletServiceImpl.java:87) ~[classes!/:0.10.0]
+	at com.jpmorgan.cakeshop.controller.WalletController.unlock(WalletController.java:83) ~[classes!/:0.10.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_144]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:220) ~[spring-web-4.3.5.RELEASE.jar!/:4.3.5.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134) ~[spring-web-4.3.5.RELEASE.jar!/:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:116) ~[spring-webmvc-4.3.5.RELEASE.jar!/:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.5.RELEASE.jar!/:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.5.RELEASE.jar!/:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.5.RELEASE.jar!/:4.3.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) [spring-webmvc-4.3.5.RELEASE.jar!/:4.3.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) [spring-webmvc-4.3.5.RELEASE.jar!/:4.3.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.5.RELEASE.jar!/:4.3.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) [spring-webmvc-4.3.5.RELEASE.jar!/:4.3.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707) [javax.servlet-api-3.1.0.jar!/:3.1.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.5.RELEASE.jar!/:4.3.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) [javax.servlet-api-3.1.0.jar!/:3.1.0]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:812) [jetty-servlet-9.2.19.v20160908.jar!/:9.2.19.v20160908]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669) [jetty-servlet-9.2.19.v20160908.jar!/:9.2.19.v20160908]
+	at org.eclipse.jetty.websocket.server.WebSocketUpgradeFilter.doFilter(WebSocketUpgradeFilter.java:224) [websocket-server-9.2.19.v20160908.jar!/:9.2.19.v20160908]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652) [jetty-servlet-9.2.19.v20160908.jar!/:9.2.19.v20160908]
+	at org.springframework.boot.web.filter.ApplicationContextHeaderFilter.doFilterInternal(ApplicationContextHeaderFilter.java:55) [spring-boot-1.4.3.RELEASE.jar!/:1.4.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.5.RELEASE.jar!/:4.3.5.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652) [jetty-servlet-9.2.19.v20160908.jar!/:9.2.19.v20160908]
+	at com.jpmorgan.cakeshop.config.HealthCheckInterceptor.doFilterInternal(HealthCheckInterceptor.java:34) [classes!/:0.10.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.5.RELEASE.jar!/:4.3.5.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652) [jetty-servlet-9.2.19.v20160908.jar!/:9.2.19.v20160908]
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:105) [spring-boot-actuator-1.4.3.RELEASE.jar!/:1.4.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.5.RELEASE.jar!/:4.3.5.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652) [jetty-servlet-9.2.19.v20160908.jar!/:9.2.19.v20160908]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:208) [spring-security-web-4.1.4.RELEASE.jar!/:4.1.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177) [spring-security-web-4.1.4.RELEASE.jar!/:4.1.4.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346) [spring-web-4.3.5.RELEASE.jar!/:4.3.5.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262) [spring-web-4.3.5.RELEASE.jar!/:4.3.5.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652) [jetty-servlet-9.2.19.v20160908.jar!/:9.2.19.v20160908]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.5.RELEASE.jar!/:4.3.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.5.RELEASE.jar!/:4.3.5.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652) [jetty-servlet-9.2.19.v20160908.jar!/:9.2.19.v20160908]
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:106) [spring-boot-actuator-1.4.3.RELEASE.jar!/:1.4.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.5.RELEASE.jar!/:4.3.5.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652) [jetty-servlet-9.2.19.v20160908.jar!/:9.2.19.v20160908]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585) [jetty-servlet-9.2.19.v20160908.jar!/:9.2.19.v20160908]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) [jetty-server-9.2.19.v20160908.jar!/:9.2.19.v20160908]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577) [jetty-security-9.2.19.v20160908.jar!/:9.2.19.v20160908]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223) [jetty-server-9.2.19.v20160908.jar!/:9.2.19.v20160908]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127) [jetty-server-9.2.19.v20160908.jar!/:9.2.19.v20160908]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515) [jetty-servlet-9.2.19.v20160908.jar!/:9.2.19.v20160908]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185) [jetty-server-9.2.19.v20160908.jar!/:9.2.19.v20160908]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061) [jetty-server-9.2.19.v20160908.jar!/:9.2.19.v20160908]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) [jetty-server-9.2.19.v20160908.jar!/:9.2.19.v20160908]
+	at org.eclipse.jetty.servlets.gzip.GzipHandler.handle(GzipHandler.java:529) [jetty-servlets-9.2.19.v20160908.jar!/:9.2.19.v20160908]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [jetty-server-9.2.19.v20160908.jar!/:9.2.19.v20160908]
+	at org.eclipse.jetty.server.Server.handle(Server.java:499) [jetty-server-9.2.19.v20160908.jar!/:9.2.19.v20160908]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:311) [jetty-server-9.2.19.v20160908.jar!/:9.2.19.v20160908]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257) [jetty-server-9.2.19.v20160908.jar!/:9.2.19.v20160908]
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:544) [jetty-io-9.2.19.v20160908.jar!/:9.2.19.v20160908]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635) [jetty-util-9.2.19.v20160908.jar!/:9.2.19.v20160908]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555) [jetty-util-9.2.19.v20160908.jar!/:9.2.19.v20160908]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_144]
+[WARN ] 2018-02-07 09:01:50.878 [qtp2138005960-19] BaseController - Caught exception: RPC request failed: could not decrypt key with given passphrase
+com.jpmorgan.cakeshop.error.APIException: RPC request failed: could not decrypt key with given passphrase
+	at com.jpmorgan.cakeshop.service.impl.GethHttpServiceImpl.processResponse(GethHttpServiceImpl.java:199) ~[classes!/:0.10.0]
+	at com.jpmorgan.cakeshop.service.impl.GethHttpServiceImpl.executeGethCall(GethHttpServiceImpl.java:165) ~[classes!/:0.10.0]
+	at com.jpmorgan.cakeshop.service.impl.GethHttpServiceImpl.executeGethCall(GethHttpServiceImpl.java:146) ~[classes!/:0.10.0]
+	at sun.reflect.GeneratedMethodAccessor106.invoke(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_144]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333) ~[spring-aop-4.3.5.RELEASE.jar!/:4.3.5.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207) ~[spring-aop-4.3.5.RELEASE.jar!/:4.3.5.RELEASE]
+	at com.sun.proxy.$Proxy116.executeGethCall(Unknown Source) ~[?:?]
+	at com.jpmorgan.cakeshop.service.impl.WalletServiceImpl.unlockAccount(WalletServiceImpl.java:87) ~[classes!/:0.10.0]
+	at com.jpmorgan.cakeshop.controller.WalletController.unlock(WalletController.java:83) ~[classes!/:0.10.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_144]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:220) ~[spring-web-4.3.5.RELEASE.jar!/:4.3.5.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134) ~[spring-web-4.3.5.RELEASE.jar!/:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:116) ~[spring-webmvc-4.3.5.RELEASE.jar!/:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.5.RELEASE.jar!/:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.5.RELEASE.jar!/:4.3.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.5.RELEASE.jar!/:4.3.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) [spring-webmvc-4.3.5.RELEASE.jar!/:4.3.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) [spring-webmvc-4.3.5.RELEASE.jar!/:4.3.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.5.RELEASE.jar!/:4.3.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) [spring-webmvc-4.3.5.RELEASE.jar!/:4.3.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707) [javax.servlet-api-3.1.0.jar!/:3.1.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.5.RELEASE.jar!/:4.3.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) [javax.servlet-api-3.1.0.jar!/:3.1.0]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:812) [jetty-servlet-9.2.19.v20160908.jar!/:9.2.19.v20160908]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669) [jetty-servlet-9.2.19.v20160908.jar!/:9.2.19.v20160908]
+	at org.eclipse.jetty.websocket.server.WebSocketUpgradeFilter.doFilter(WebSocketUpgradeFilter.java:224) [websocket-server-9.2.19.v20160908.jar!/:9.2.19.v20160908]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652) [jetty-servlet-9.2.19.v20160908.jar!/:9.2.19.v20160908]
+	at org.springframework.boot.web.filter.ApplicationContextHeaderFilter.doFilterInternal(ApplicationContextHeaderFilter.java:55) [spring-boot-1.4.3.RELEASE.jar!/:1.4.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.5.RELEASE.jar!/:4.3.5.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652) [jetty-servlet-9.2.19.v20160908.jar!/:9.2.19.v20160908]
+	at com.jpmorgan.cakeshop.config.HealthCheckInterceptor.doFilterInternal(HealthCheckInterceptor.java:34) [classes!/:0.10.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.5.RELEASE.jar!/:4.3.5.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652) [jetty-servlet-9.2.19.v20160908.jar!/:9.2.19.v20160908]
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:105) [spring-boot-actuator-1.4.3.RELEASE.jar!/:1.4.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.5.RELEASE.jar!/:4.3.5.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652) [jetty-servlet-9.2.19.v20160908.jar!/:9.2.19.v20160908]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:208) [spring-security-web-4.1.4.RELEASE.jar!/:4.1.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177) [spring-security-web-4.1.4.RELEASE.jar!/:4.1.4.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346) [spring-web-4.3.5.RELEASE.jar!/:4.3.5.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262) [spring-web-4.3.5.RELEASE.jar!/:4.3.5.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652) [jetty-servlet-9.2.19.v20160908.jar!/:9.2.19.v20160908]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.5.RELEASE.jar!/:4.3.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.5.RELEASE.jar!/:4.3.5.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652) [jetty-servlet-9.2.19.v20160908.jar!/:9.2.19.v20160908]
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:106) [spring-boot-actuator-1.4.3.RELEASE.jar!/:1.4.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.5.RELEASE.jar!/:4.3.5.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652) [jetty-servlet-9.2.19.v20160908.jar!/:9.2.19.v20160908]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585) [jetty-servlet-9.2.19.v20160908.jar!/:9.2.19.v20160908]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) [jetty-server-9.2.19.v20160908.jar!/:9.2.19.v20160908]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577) [jetty-security-9.2.19.v20160908.jar!/:9.2.19.v20160908]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223) [jetty-server-9.2.19.v20160908.jar!/:9.2.19.v20160908]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127) [jetty-server-9.2.19.v20160908.jar!/:9.2.19.v20160908]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515) [jetty-servlet-9.2.19.v20160908.jar!/:9.2.19.v20160908]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185) [jetty-server-9.2.19.v20160908.jar!/:9.2.19.v20160908]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061) [jetty-server-9.2.19.v20160908.jar!/:9.2.19.v20160908]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) [jetty-server-9.2.19.v20160908.jar!/:9.2.19.v20160908]
+	at org.eclipse.jetty.servlets.gzip.GzipHandler.handle(GzipHandler.java:529) [jetty-servlets-9.2.19.v20160908.jar!/:9.2.19.v20160908]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [jetty-server-9.2.19.v20160908.jar!/:9.2.19.v20160908]
+	at org.eclipse.jetty.server.Server.handle(Server.java:499) [jetty-server-9.2.19.v20160908.jar!/:9.2.19.v20160908]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:311) [jetty-server-9.2.19.v20160908.jar!/:9.2.19.v20160908]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257) [jetty-server-9.2.19.v20160908.jar!/:9.2.19.v20160908]
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:544) [jetty-io-9.2.19.v20160908.jar!/:9.2.19.v20160908]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635) [jetty-util-9.2.19.v20160908.jar!/:9.2.19.v20160908]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555) [jetty-util-9.2.19.v20160908.jar!/:9.2.19.v20160908]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_144]
