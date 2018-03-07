@@ -61,6 +61,12 @@ public class PluginImpl implements Plugin, PropertyEventListener
         {
             Log.info("Initialize Cakeshop");
 
+            String cakeshopHome = pluginDirectory.getPath() + File.separator + "classes" + File.separator + "data";
+            System.setProperty("eth.config.dir", cakeshopHome);
+            System.setProperty("geth.node", "geth");
+            System.setProperty("cakeshop.spring.profiles.active", "local");
+            System.setProperty("spring.config.location", "file:" + cakeshopHome +  File.separator + "data" + File.separator + "local" + File.separator + "application.properties");
+
             context4 = new WebAppContext(null, pluginDirectory.getPath() + "/classes/war", "/cakeshop");
 
             final List<ContainerInitializer> initializers4 = new ArrayList();
@@ -68,11 +74,6 @@ public class PluginImpl implements Plugin, PropertyEventListener
             context4.setAttribute("org.eclipse.jetty.containerInitializers", initializers4);
             context4.setAttribute(InstanceManager.class.getName(), new SimpleInstanceManager());
 
-/*
-            context4 = new WebAppContext();
-            context4.setWar( pluginDirectory.getPath() + "/classes/cakeshop.war" );
-            context4.setContextPath( "/cakeshop" );
-*/
             HttpBindManager.getInstance().addJettyHandler(context4);
 
         } else {
