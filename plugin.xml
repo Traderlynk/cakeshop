@@ -13,7 +13,6 @@
         <tab id="tab-server">
             <sidebar id="siderbar-cakeshop" name="${plugin.title}" description="${plugin.title.description}" >
                 <item id="cakeshop-settings" name="${config.page.settings}" description="${config.page.settings.description}" url="cakeshop.jsp"/>
-                <item id="cakeshop-webui" name="${config.page.webui}" description="${config.page.webui.description}" url="cakeshop-webui.jsp"/>                                
             </sidebar>
         </tab>
     </adminconsole> 
