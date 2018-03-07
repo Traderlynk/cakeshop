@@ -1,6 +1,6 @@
-# IPFS Plugin for openfire
+# Cakeshop Plugin for openfire
 
-This plugin enables Openfire to become an IPFS node.
+This plugin enables Openfire to become an Ethereum node and provide a dashboard/sdk to manage block chain
 
 # place holder
 
