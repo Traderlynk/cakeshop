@@ -64,7 +64,7 @@ public class PluginImpl implements Plugin, PropertyEventListener
             String cakeshopHome = pluginDirectory.getPath() + File.separator + "classes" + File.separator + "data";
             System.setProperty("eth.config.dir", cakeshopHome);
             System.setProperty("geth.node", "geth");
-            System.setProperty("cakeshop.spring.profiles.active", "local");
+            System.setProperty("spring.profiles.active", "local");
             System.setProperty("spring.config.location", "file:" + cakeshopHome +  File.separator + "data" + File.separator + "local" + File.separator + "application.properties");
 
             context4 = new WebAppContext(null, pluginDirectory.getPath() + "/classes/war", "/cakeshop");
