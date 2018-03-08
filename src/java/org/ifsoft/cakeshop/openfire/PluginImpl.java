@@ -1,6 +1,12 @@
 package org.ifsoft.cakeshop.openfire;
 
 import java.io.File;
+import java.net.*;
+import java.util.concurrent.*;
+import java.util.*;
+import java.util.function.*;
+import java.util.stream.*;
+import java.nio.file.*;
 
 import org.jivesoftware.openfire.container.Plugin;
 import org.jivesoftware.openfire.container.PluginManager;
@@ -29,55 +35,174 @@ import org.eclipse.jetty.security.authentication.*;
 import org.apache.tomcat.InstanceManager;
 import org.apache.tomcat.SimpleInstanceManager;
 
+import java.lang.reflect.*;
 import java.util.*;
 
+import org.jitsi.util.OSUtils;
+
+import de.mxro.process.*;
 
 
-public class PluginImpl implements Plugin, PropertyEventListener
+public class PluginImpl implements Plugin, PropertyEventListener, ProcessListener
 {
     private static final Logger Log = LoggerFactory.getLogger(PluginImpl.class);
-    private WebAppContext context4;
-
+    private String pluginDirectoryPath = null;
+    private XProcess cakeshopThread = null;
+    private String cakeshopExePath = null;
+    private String cakeshopHomePath = null;
+    private boolean cakeshopInitialise = false;
+    private boolean cakeshopConfigure = false;
+    private boolean cakeshopStart = false;
+    private boolean cakeshopReady = false;
+    private String cakeshopError = null;
+    private ServletContextHandler cakeshopContext;
+    private ExecutorService executor;
+    private boolean keepRunning = true;
 
     public void destroyPlugin()
     {
         PropertyEventDispatcher.removeListener(this);
 
         try {
-            HttpBindManager.getInstance().removeJettyHandler(context4);
+            keepRunning = false;
+
+            if (executor != null)
+            {
+                executor.shutdown();
+            }
+
+            if (cakeshopThread != null) {
+                cakeshopThread.destory();
+            }
+
+            Spawn.startProcess(cakeshopExePath + " shutdown", new File(cakeshopHomePath), this);
+
+            HttpBindManager.getInstance().removeJettyHandler(cakeshopContext);
         }
         catch (Exception e) {
-
+            //Log.error("CakeShop destroyPlugin ", e);
         }
     }
 
     public void initializePlugin(final PluginManager manager, final File pluginDirectory)
     {
         PropertyEventDispatcher.addListener(this);
+        pluginDirectoryPath = JiveGlobals.getProperty("cakeshop.path", JiveGlobals.getHomeDirectory() + File.separator + "cakeshop");
+        checkNatives(pluginDirectory);
 
         boolean cakeshopEnabled = JiveGlobals.getBooleanProperty("cakeshop.enabled", true);
 
-        if (cakeshopEnabled)
+        if (cakeshopExePath != null && cakeshopEnabled)
         {
-            Log.info("Initialize Cakeshop");
-
-            String cakeshopHome = pluginDirectory.getPath() + File.separator + "classes" + File.separator + "data";
-            System.setProperty("eth.config.dir", cakeshopHome);
-            System.setProperty("geth.node", "geth");
-            System.setProperty("spring.profiles.active", "local");
-            System.setProperty("spring.config.location", "file:" + cakeshopHome +  File.separator + "data" + File.separator + "local" + File.separator + "application.properties");
-
-            context4 = new WebAppContext(null, pluginDirectory.getPath() + "/classes/war", "/cakeshop");
-
-            final List<ContainerInitializer> initializers4 = new ArrayList();
-            initializers4.add(new ContainerInitializer(new JettyJasperInitializer(), null));
-            context4.setAttribute("org.eclipse.jetty.containerInitializers", initializers4);
-            context4.setAttribute(InstanceManager.class.getName(), new SimpleInstanceManager());
-
-            HttpBindManager.getInstance().addJettyHandler(context4);
+            executor = Executors.newCachedThreadPool();
+            cakeshopThread = Spawn.startProcess(cakeshopExePath, new File(cakeshopHomePath), this);
+            addCakeShopProxy();
 
         } else {
             Log.info("cakeshop disabled");
+        }
+    }
+
+    public void sendLine(String command)
+    {
+        if (cakeshopThread != null) cakeshopThread.sendLine(command);
+    }
+
+    public String getPath()
+    {
+        return pluginDirectoryPath;
+    }
+
+    public String getIpAddress()
+    {
+        String ourHostname = XMPPServer.getInstance().getServerInfo().getHostname();
+        String ourIpAddress = "127.0.0.1";
+
+        try {
+            ourIpAddress = InetAddress.getByName(ourHostname).getHostAddress();
+        } catch (Exception e) {
+
+        }
+
+        return ourIpAddress;
+    }
+
+    public void onOutputLine(final String line) {
+        Log.info(line);
+    }
+
+    public void onProcessQuit(int code) {
+        Log.info("onProcessQuit " + code);
+
+    }
+
+    public void onOutputClosed() {
+        Log.error("CakeShop terminated normally");
+    }
+
+    public void onErrorLine(final String line) {
+        Log.error(line);
+    }
+
+    public void onError(final Throwable t) {
+        Log.error("CakeShopThread error", t);
+    }
+
+    private void addCakeShopProxy()
+    {
+        Log.info("Initialize CakeShopProxy");
+
+        cakeshopContext = new ServletContextHandler(null, "/cakeshop", ServletContextHandler.SESSIONS);
+        //cakeshopContext.setClassLoader(this.getClass().getClassLoader());
+
+        ServletHolder proxyServlet = new ServletHolder(ProxyServlet.Transparent.class);
+        proxyServlet.setInitParameter("proxyTo", "http://" + getIpAddress() + ":8080/cakeshop");
+        proxyServlet.setInitParameter("prefix", "/");
+        cakeshopContext.addServlet(proxyServlet, "/*");
+
+        HttpBindManager.getInstance().addJettyHandler(cakeshopContext);
+    }
+
+    private void checkNatives(File pluginDirectory)
+    {
+        File cakeshopFolder = new File(pluginDirectoryPath);
+
+        if(!cakeshopFolder.exists())
+        {
+            Log.info("initializePlugin home " + pluginDirectory);
+            cakeshopFolder.mkdirs();
+        }
+
+        try
+        {
+            String suffix = null;
+            String warFile = null;
+
+            if(OSUtils.IS_LINUX64)
+            {
+                suffix = "linux-64";
+                warFile = "cakeshop-0.10.0-x86_64-linux.war";
+            }
+            else if(OSUtils.IS_WINDOWS64)
+            {
+                suffix = "win-64";
+                warFile = "cakeshop-0.10.0-x86_64-windows.war";
+            }
+
+            if (suffix != null)
+            {
+                cakeshopHomePath = pluginDirectory.getAbsolutePath() + File.separator + "classes" + File.separator + suffix;
+                cakeshopExePath = "java -Dgeth.node=geth -jar " + warFile;
+
+                Log.info("checkNatives cakeshop executable path " + cakeshopExePath);
+
+            } else {
+                Log.error("checkNatives unknown OS " + pluginDirectory.getAbsolutePath());
+            }
+        }
+        catch (Exception e)
+        {
+            Log.error(e.getMessage(), e);
         }
     }
 
